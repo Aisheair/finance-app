@@ -1,0 +1,99 @@
+/* Base Styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background-color: #0f0f0f;
+  padding: 16px 32px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 255, 204, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #00ffcc;
+}
+
+/* Links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #00ffcc;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00ffcc;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Buttons */
+.nav-buttons .btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Signup Button */
+.signup {
+  background: linear-gradient(to right, #1f1f1f, #333333);
+  border: 1px solid #00ffcc;
+  color: white;
+}
+
+.signup:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00ffcc;
+}
+
+/* Login Button */
+.login {
+  background-color: #00ffcc;
+  color: #000;
+}
+
+.login:hover {
+  background-color: #00e6b8;
+  transform: scale(1.1) rotate(1deg);
+}

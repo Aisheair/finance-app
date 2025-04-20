@@ -1,0 +1,138 @@
+.dashboard-container {
+    background-color: #111;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-card {
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .dashboard-left {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .dashboard-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #26e07f;
+  }
+  
+  .description {
+    color: #bbb;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    color: #aaf0d1;
+  }
+  
+  .features li {
+    margin-bottom: 10px;
+  }
+  
+  .start-button {
+    background-color: #26e07f;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #20c76f;
+  }
+  
+  .dashboard-right {
+    position: relative;
+    width: 50%;
+  }
+  
+  .dashboard-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .caption-title {
+    color: #26e07f;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .caption-subtitle {
+    font-weight: normal;
+  }
+  
+  /* ========================= */
+  /*       Responsive CSS      */
+  /* ========================= */
+  
+  @media (max-width: 768px) {
+    .dashboard-card {
+      flex-direction: column;
+    }
+  
+    .dashboard-right {
+      width: 100%;
+      height: 200px; /* Optional: fix height for smaller screens */
+    }
+  
+    .dashboard-left {
+      padding: 30px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard-left h2 {
+      font-size: 20px;
+    }
+  
+    .description,
+    .features li,
+    .image-caption {
+      font-size: 13px;
+    }
+  
+    .start-button {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 1rem;
+    }
+  
+    .dashboard-right {
+      height: 180px;
+    }
+  }
+  

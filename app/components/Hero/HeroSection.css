@@ -1,0 +1,132 @@
+.hero {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  max-width: 1200px;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 0 0 20px;
+}
+
+.hero-text .highlight {
+  color: #00ffcc;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #bbbbbb;
+  margin-bottom: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.get-started,
+.learn-more {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.get-started {
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  font-weight: bold;
+}
+
+.get-started:hover {
+  box-shadow: 0 0 15px 3px #00ffcc;
+  transform: translateY(-2px);
+}
+
+.learn-more {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.learn-more:hover {
+  box-shadow: 0 0 15px 3px #00ffcc;
+  transform: translateY(-2px);
+}
+
+.hero-gif-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 255, 204, 0.15);
+}
+
+.finance-gif {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ensures center alignment */
+    align-items: center;
+    gap: 15px;
+    width: 100%; /* Take full width of parent to center content */
+    margin-top: 20px;
+  }
+
+  .get-started,
+  .learn-more {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+}
+

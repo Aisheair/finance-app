@@ -1,0 +1,46 @@
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+  .card {
+    background-color: #1e1e1e;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: #00d395;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardFadeIn 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  }
+  
+  .card p {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Animate each card with delay using inline styles or nth-child */
+  .card:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .card:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .card:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes cardFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
